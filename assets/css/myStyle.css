@@ -1,0 +1,94 @@
+.highlight {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.roles {
+    color: #343450 !important;
+    font-size: 15px;
+    font-style: italic;
+    margin: 0px;
+    padding: :0px;
+}
+
+.table {
+    border: 2px solid #414156;
+    color: #292929;
+}
+
+.table th {
+    background-color: #414156;
+    color: #fff;
+}
+
+p {
+    text-align: justify;
+}
+
+/*effect-underline*/
+li.effect-underline:after {
+    content: '';
+    position: absolute;
+    left: 15px;
+    display: inline-block;
+    height: 1em;
+    width: 60%;
+    border-bottom: 1px solid;
+    margin-top: 10px;
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: scale(0, 1);
+    transform: scale(0, 1);
+}
+
+li.effect-underline:hover:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+/* Flashing */
+.hover13 figure:hover img {
+	opacity: 1;
+	-webkit-animation: flash 1.5s;
+	animation: flash 1.5s;
+}
+@-webkit-keyframes flash {
+	0% {
+		opacity: .4;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes flash {
+	0% {
+		opacity: .4;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+.main-wrapper
+{
+ background: url(http://pages.3pillarglobal.com/rs/793-PPL-840/images/blue_background_1600x1066-compressor.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+ background-size: 100% 100%;
+}
+
+
+}
+.mt-5, .my-5{
+    margin-top: 0rem!important;
+    background-color: #fff !important;
+}
+
+a.theme-link {
+    color: #a28686 !important;
+}
