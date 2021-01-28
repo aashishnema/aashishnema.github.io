@@ -229,7 +229,7 @@ td.effect-underline:hover:after {
 }
 
 a.theme-link {
-    color: #a28686 !important;
+    color: #e4efbc  !important;
 }
 
 .custom-counter {
@@ -514,37 +514,4 @@ body {
             background-color: #fbfbfb !important;
             }
 
-        .custom_box-1 {
-
-            position: relative;
-            border: 1px solid #b5acac;
-            height: 200px;
-            border-radius: 5px;
-            background-color: #aeaeae;
-        }
-
-        .txt-lead {
-            text-align: center;
-            color: #d6d6d6
-        }
-
-        .txt-para {
-            text-align: center;
-            color: #333;
-        }
-
-        .textdiv {
-            text-align: center
-        }
-
-        .btn-cstm {
-            color: #fff !important;
-            background-color: #3b4958  !important;
-            border-color: #4c5865  !important;
-        }
-
-
-        .custom_box-1:hover {
-            transform: scale(1.1, 1.1);
-            transition: ease 0.50s;
-        }
+        
