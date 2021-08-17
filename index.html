@@ -10,6 +10,11 @@
     <link href="https://fonts.googleapis.com/css?family=Mukta:300,400,500,600,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/vendors/@fortawesome/fontawesome-free/css/all.min.css">
     <link rel="stylesheet" href="assets/css/live-resume.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script>
+
+
+    </script>
     <style>
         aside .profile-img-wrapper img {
             width: 100px;
@@ -37,6 +42,21 @@
             margin-top: 16px;
         }
 
+
+        .pulse {
+            animation: pulse-animation 2s infinite;
+        }
+
+        @keyframes pulse-animation {
+            0% {
+                box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.2);
+            }
+
+            100% {
+                box-shadow: 0 0 0 20px rgba(0, 0, 0, 0);
+            }
+        }
+
     </style>
 </head>
 
@@ -55,7 +75,7 @@
             </div>
             <h1 class="profile-name">Ashish Nema</h1>
             <div class="text-center">
-                <span class="badge badge-white badge-pill profile-designation">UI / UX Designer</span>
+                <span class="animate__animated animate__shakeY badge badge-white badge-pill profile-designation">UI / UX Designer</span>
             </div>
             <nav class="social-links">
                 <a title="Linked In" href="https://www.linkedin.com/in/aashishnema007/" target="_blank" class="social-link"><i class="fab fa-linkedin"></i></a>
@@ -70,8 +90,8 @@
                     <p>Mobile : +91-8871491597</p>
                     <p>Email : aashish.nema4@gmail.com</p>
                     <p>Address : Bhopal, Madhya Pradesh</p>
-                    <a style="color:white" target="_blank" href="assets/resume/UXDesignerResume.pdf" class="btn btn-download-cv btn-primary rounded-pill">
-                        <img src="assets/images/download.svg" alt="download" class="btn-img">Resume </a>
+                    <a style="color:white" target="_blank" href="assets/resume/UXDesignerResume.pdf" class="btn  btn-download-cv btn-primary rounded-pill">
+                        <img src="assets/images/download.svg" alt="download" class="btn-img ">Resume </a>
                 </div>
             </div>
             <div class="widget card">
@@ -264,7 +284,7 @@
                 </div>
 
 
-                <a href="https://api.whatsapp.com/send?phone=918871491597&text=Hi Aashish" class="float" target="_blank">
+                <a href="https://api.whatsapp.com/send?phone=918871491597&text=Hi Aashish" class="float pulse animate__animated animate__bounce" target="_blank">
                     <i class="fab fa-whatsapp my-float"></i>
                 </a>
             </section>
@@ -275,6 +295,7 @@
     <script src="assets/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="assets/vendors/entry/jq.entry.min.js"></script>
     <script src="assets/js/live-resume.js"></script>
+
 </body>
 
 </html>
