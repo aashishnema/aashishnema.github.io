@@ -9,6 +9,10 @@
     <link rel="shortcut icon" href="assets/images/favicon.ico">
     <link href="https://fonts.googleapis.com/css?family=Mukta:300,400,500,600,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/vendors/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="assets/css/live-resume.css">
+    <link rel="stylesheet" href="assets/css/customstyle.css">
+    <link href="assets/aos/aos.css?v1.5" rel="stylesheet" />
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-RBMXNGY2T9"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -19,79 +23,8 @@
         gtag('js', new Date());
 
         gtag('config', 'G-RBMXNGY2T9');
+
     </script>
-    <link rel="stylesheet" href="assets/css/live-resume.css">
-    <style>
-        aside .profile-img-wrapper img {
-            width: 100px;
-            height: 100px;
-            border-radius: 5px;
-            box-shadow: 3px 3px 13px #aeaeae;
-        }
-
-        .animate-border {
-            position: relative;
-            display: block;
-            width: 115px;
-            height: 3px;
-            background: #fa6742;
-            overflow: hidden;
-        }
-
-        .animate-border:after {
-            position: absolute;
-            content: "";
-            width: 35px;
-            height: 3px;
-            left: 15px;
-            bottom: 0;
-            border-left: 10px solid #fff;
-            border-right: 10px solid #fff;
-        }
-
-        .animate-border.border-black:after {
-            border-right-color: #151414;
-            border-left-color: #151414;
-        }
-
-        .animate-border:after {
-            position: absolute;
-            content: "";
-            width: 35px;
-            height: 3px;
-            left: 0;
-            bottom: 0;
-            border-left: 10px solid #fff;
-            border-right: 10px solid #fff;
-            -webkit-animation: animborder 2s linear infinite;
-            animation: animborder 2s linear infinite;
-        }
-
-        @-webkit-keyframes animborder {
-            0% {
-                -webkit-transform: translateX(0);
-                transform: translateX(0)
-            }
-
-            100% {
-                -webkit-transform: translateX(113px);
-                transform: translateX(113px)
-            }
-        }
-
-        @keyframes animborder {
-            0% {
-                -webkit-transform: translateX(0);
-                transform: translateX(0)
-            }
-
-            100% {
-                -webkit-transform: translateX(113px);
-                transform: translateX(113px)
-            }
-        }
-    </style>
-
 </head>
 
 <body>
@@ -109,13 +42,14 @@
             </div>
             <h1 class="profile-name">Ashish Nema</h1>
             <div class="text-center">
-                <span class="badge badge-white badge-pill profile-designation">UI / UX Designer</span>
+                <span class="animate__animated animate__shakeY badge badge-white badge-pill profile-designation">UI / UX Designer</span>
             </div>
             <nav class="social-links">
                 <a title="Linked In" href="https://www.linkedin.com/in/aashishnema007/" target="_blank" class="social-link"><i class="fab fa-linkedin"></i></a>
-                <a title="Whats App" href="https://api.whatsapp.com/send?phone=918871491597&text=Hi" target="_blank" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                <a title="Whats App" href="https://api.whatsapp.com/send?phone=8871491596&text=Hi%20Aashish%20!" target="_blank" class="social-link"><i class="fab fa-whatsapp"></i></a>
                 <a title="Behance Profile" href="https://www.behance.net/halassingh" class="social-link"><i class="fab fa-behance"></i></a>
                 <a title="Website" target="_blank" href="https://aashishnema.github.io" class="social-link"><i class="fab fa-dribbble"></i></a>
+                <a title="Gmail" href="mailto:aashish.nema4@gmail.com" class="social-link"><i class="fa fa-envelope"></i></a>
 
             </nav>
             <div class="widget">
@@ -126,7 +60,7 @@
                     <p>Address : Bhopal, Madhya Pradesh</p>
                     <a style="color:white" target="_blank" href="assets/resume/UXDesignerResume.pdf" class="btn btn-download-cv btn-primary rounded-pill">
                         <img src="assets/images/download.svg" alt="download" class="btn-img">Resume </a>
-                  
+
                 </div>
             </div>
             <div class="widget card">
@@ -163,7 +97,7 @@
 
         <main>
 
-            <section class="resume-section">
+            <section class="resume-section" data-aos="zoom-in">
                 <div class="row">
                     <div class="col-lg-6">
                         <h6 class="section-subtitle">RESUME</h6>
@@ -214,11 +148,45 @@
                     </div>
                 </div>
             </section>
-
+            <a href="https://api.whatsapp.com/send?phone=918871491597&text=Hi Aashish" class="float pulse " target="_blank">
+                <i class="fab fa-whatsapp my-float"></i>
+            </a>
         </main>
+        <div id="preloader"></div>
     </div>
+
+
     <script src="assets/vendors/jquery/dist/jquery.min.js"></script>
     <script src="assets/vendors/@popperjs/core/dist/umd/popper-base.min.js"></script>
     <script src="assets/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="assets/vendors/entry/jq.entry.min.js"></script>
     <script src="assets/js/live-resume.js"></script>
-</body></html>
+    <script src="assets/aos/aos.js"></script>
+    <script type="text/javascript">
+        // Preloader
+        $(window).on('load', function() {
+            if ($('#preloader').length) {
+                $('#preloader').delay(100).fadeOut('slow', function() {
+                    $(this).remove();
+                });
+            }
+        });
+
+        // Init AOS
+        function aos_init() {
+            AOS.init({
+                duration: 1000,
+                easing: "ease-in-out",
+                once: true,
+                mirror: false
+            });
+        }
+        $(window).on('load', function() {
+            aos_init();
+        });
+
+    </script>
+
+</body>
+
+</html>
