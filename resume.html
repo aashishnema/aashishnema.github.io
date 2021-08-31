@@ -9,6 +9,17 @@
     <link rel="shortcut icon" href="assets/images/favicon.ico">
     <link href="https://fonts.googleapis.com/css?family=Mukta:300,400,500,600,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/vendors/@fortawesome/fontawesome-free/css/all.min.css">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RBMXNGY2T9"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-RBMXNGY2T9');
+    </script>
     <link rel="stylesheet" href="assets/css/live-resume.css">
     <style>
         aside .profile-img-wrapper img {
@@ -18,7 +29,69 @@
             box-shadow: 3px 3px 13px #aeaeae;
         }
 
+        .animate-border {
+            position: relative;
+            display: block;
+            width: 115px;
+            height: 3px;
+            background: #fa6742;
+            overflow: hidden;
+        }
+
+        .animate-border:after {
+            position: absolute;
+            content: "";
+            width: 35px;
+            height: 3px;
+            left: 15px;
+            bottom: 0;
+            border-left: 10px solid #fff;
+            border-right: 10px solid #fff;
+        }
+
+        .animate-border.border-black:after {
+            border-right-color: #151414;
+            border-left-color: #151414;
+        }
+
+        .animate-border:after {
+            position: absolute;
+            content: "";
+            width: 35px;
+            height: 3px;
+            left: 0;
+            bottom: 0;
+            border-left: 10px solid #fff;
+            border-right: 10px solid #fff;
+            -webkit-animation: animborder 2s linear infinite;
+            animation: animborder 2s linear infinite;
+        }
+
+        @-webkit-keyframes animborder {
+            0% {
+                -webkit-transform: translateX(0);
+                transform: translateX(0)
+            }
+
+            100% {
+                -webkit-transform: translateX(113px);
+                transform: translateX(113px)
+            }
+        }
+
+        @keyframes animborder {
+            0% {
+                -webkit-transform: translateX(0);
+                transform: translateX(0)
+            }
+
+            100% {
+                -webkit-transform: translateX(113px);
+                transform: translateX(113px)
+            }
+        }
     </style>
+
 </head>
 
 <body>
@@ -53,6 +126,7 @@
                     <p>Address : Bhopal, Madhya Pradesh</p>
                     <a style="color:white" target="_blank" href="assets/resume/UXDesignerResume.pdf" class="btn btn-download-cv btn-primary rounded-pill">
                         <img src="assets/images/download.svg" alt="download" class="btn-img">Resume </a>
+                  
                 </div>
             </div>
             <div class="widget card">
@@ -104,7 +178,7 @@
                             <li class="time-line-item">
                                 <span class="badge badge-primary">2007 - 2008</span>
                                 <h6 class="time-line-item-title">Higher Secondary Certificate</h6>
-                                  <p class="time-line-item-subtitle">Madhya Pradesh Board of Secondary Education</p>
+                                <p class="time-line-item-subtitle">Madhya Pradesh Board of Secondary Education</p>
                                 <p class="time-line-item-content">St. Francis Convent Hr.Sec. School Raisen</p>
                             </li>
                             <li class="time-line-item">
@@ -125,7 +199,8 @@
                                 <h6 class="time-line-item-title">UI/UX Designer</h6>
                                 <p class="time-line-item-subtitle">PrimeOne Workforce Private Limited. </p>
                                 <p class="time-line-item-content">Madhya Pradesh Agency for Promotion of Information Technology (MAP_IT)
-                                    <br>47-A, Arera Hills, Bhopal(M.P.)-462011</p>
+                                    <br>47-A, Arera Hills, Bhopal(M.P.)-462011
+                                </p>
                             </li>
                             <li class="time-line-item">
                                 <span class="badge badge-primary">2013 - 2016</span>
@@ -134,7 +209,7 @@
                                 <p class="time-line-item-content">Vidisha, Madhya Pradesh
                                 </p>
                             </li>
-                            
+
                         </ul>
                     </div>
                 </div>
@@ -146,6 +221,4 @@
     <script src="assets/vendors/@popperjs/core/dist/umd/popper-base.min.js"></script>
     <script src="assets/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="assets/js/live-resume.js"></script>
-</body>
-
-</html>
+</body></html>
