@@ -7436,10 +7436,12 @@ aside .profile-name {
 
 aside .profile-designation {
   padding: 5px 25px;
-  font-size: 12px;
-  line-height: 20px;
-  font-weight: 500;
-  margin-bottom: 10px; }
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    border: 1px solid red;
+    box-shadow: 0 0 6px #be9dcf; }
 
 aside .social-links {
   margin-bottom: 1rem;
@@ -8151,5 +8153,5 @@ main {
     transform: rotate3d(0, 0, 0, 0deg); }
   to {
     transform: rotate3d(0, 1, 0, 104deg); } }
-
+   
 /*# sourceMappingURL=live-resume.css.map */

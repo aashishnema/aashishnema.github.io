@@ -186,3 +186,8 @@
       -o-transition: all 11s;
       transition: all 11s;
   }
+  a.social-link:hover {
+    /* background-color: crimson; */
+    transition: all .5s;
+    transform: translateY(-5px);
+}
